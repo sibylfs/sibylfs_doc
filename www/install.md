@@ -82,7 +82,7 @@ An example install is as follows (this uses `nix-build` to build, followed by `n
 
 
 
-## Installing plain binaries (2015-08-20 FIXME not working)
+## Installing plain binaries
 
 ***This option is not really supported***, but is probably the
 quickest way to install (if it works). Go to
@@ -100,7 +100,7 @@ inside that directory).
 
 
 
-## Installing from source using OCaml, ocamlfind and opam
+## Installing from source using OCaml, ocamlfind and opam (2015-08-20 FIXME needs updating)
 
 ***Because of the large number of dependencies, this method is quite
    fragile. ***
