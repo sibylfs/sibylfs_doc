@@ -72,8 +72,8 @@ x86-64) (and possibly others e.g. Linux i686).
     
 
 If you want to inspect the build result, type `nix-build` . This
-should create a directory `result` which contains the spec build, the
-tools build, and the executables. To install the result, type `nix-env
+should create a directory `result` which contains the 
+executables. To install the result, type `nix-env
 -i ./result`
 
 An example install is as follows (this uses `nix-build` to build, followed by `nix-env -i ./result` to install):
