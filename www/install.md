@@ -2,25 +2,13 @@
 
 The repository for the project is <https://github.com/sibylfs/sibylfs_src>
 On Linux, the simplest way to install is probably using prebuilt
-binaries via nix (see below). Potentially quicker, but fragile, is to
-install "plain binaries". The most reliable method is probably
+binaries via nix (see below). 
+
+<!-- Potentially quicker, but fragile, is to
+install "plain binaries".  -->
+
+The most reliable method is probably
 "installing from source via nix".
-
-
-## Installing plain binaries
-
-***This option is not really supported***, but is probably the
-quickest way to install (if it works). Go to
-<https://github.com/sibylfs/sibylfs_binaries/releases/tag>, select the
-latest tag, and download the `.tar.gz` file corresponding to your OS
-and architecture (eg `sibylfs_linux_amd64.tar.gz` for Linux, 64
-bit). Unpack this file:
-
-    tar xvzf <file you downloaded>
-    
-This should create a directory `sibylfs/bin` containing the
-executables. You should place these on your path (or execute from
-inside that directory).
 
 
 ## Installing prebuilt binaries via nix
@@ -91,6 +79,24 @@ tools build, and the executables. To install the result, type `nix-env
 An example install is as follows (this uses `nix-build` to build, followed by `nix-env -i ./result` to install):
 
 [![asciicast](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf.png)](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf)
+
+
+
+## Installing plain binaries (2015-08-20 FIXME not working)
+
+***This option is not really supported***, but is probably the
+quickest way to install (if it works). Go to
+<https://github.com/sibylfs/sibylfs_binaries/releases/tag>, select the
+latest tag, and download the `.tar.gz` file corresponding to your OS
+and architecture (eg `sibylfs_linux_amd64.tar.gz` for Linux, 64
+bit). Unpack this file:
+
+    tar xvzf <file you downloaded>
+    
+This should create a directory `sibylfs/bin` containing the
+executables. You should place these on your path (or execute from
+inside that directory).
+
 
 
 
