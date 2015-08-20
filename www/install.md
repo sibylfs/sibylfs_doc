@@ -86,8 +86,8 @@ An example install is as follows (this uses `nix-build` to build, followed by `n
 
 ***This option is not really supported***, but is probably the
 quickest way to install (if it works). Go to
-<https://github.com/sibylfs/sibylfs_binaries/releases/tag>, select the
-latest tag, and download the `.tar.gz` file corresponding to your OS
+<https://github.com/sibylfs/sibylfs_binaries/releases/>, select the
+latest release, and download the `.tar.gz` file corresponding to your OS
 and architecture (eg `sibylfs_linux_amd64.tar.gz` for Linux, 64
 bit). Unpack this file:
 
