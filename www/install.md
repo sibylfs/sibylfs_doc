@@ -45,7 +45,7 @@ x86-64) (and possibly others e.g. Linux i686).
     `/nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test`; now install the binaries into your path: 
 
 
-    nix-env -i [path to sibylfs from previous step]
+    nix-env -i /nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test  # N.B. replace this with the path from the import!
 
 
 ## Installing from source via nix
