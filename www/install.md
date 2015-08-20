@@ -1,6 +1,6 @@
 # Installation
 
-The repository for the project is <https://github.com/sibylfs/fs>
+The repository for the project is <https://github.com/sibylfs/sibylfs_src>
 On Linux, the simplest way to install is probably using prebuilt
 binaries via nix (see below). Potentially quicker, but fragile, is to
 install "plain binaries". The most reliable method is probably
@@ -67,15 +67,15 @@ x86-64) (and possibly others e.g. Linux i686).
   - Use git to clone the SibylFS source code:
   
   
-    git clone https://github.com/sibylfs/fs
+    git clone https://github.com/sibylfs/sibylfs_src
     
-  - This will create a directory `fs`. In the following, paths starting
-    with `fs/` refer to this directory.
+  - This will create a directory `sibylfs_src`. In the following, paths starting
+    with `sibylfs_src/` refer to this directory.
 
-  - Change to the `fs/` directory: 
+  - Change to the `sibylfs_src/` directory: 
   
   
-    cd fs/
+    cd sibylfs_src/
     
   - Build (this may take a long time) and install SibylFS by typing: 
   
@@ -126,11 +126,11 @@ The SibylFS specification is written in Lem. To build Lem:
 Now you need to get the SibylFS source.
 
   * Use git to clone the SibylFS source: `git clone
-    https://github.com/sibylfs/fs`. This will create a directory
-    `fs`. In the following, paths starting with `fs/` refer to this
+    https://github.com/sibylfs/sibylfs_src`. This will create a directory
+    `sibylfs_src`. In the following, paths starting with `sibylfs_src/` refer to this
     directory.
 
-The `fs/` directory contains two particular subdirectories: `fs_spec`
+The `sibylfs_src/` directory contains two particular subdirectories: `fs_spec`
 (the specification) and `fs_test` (the test tools). To build `fs_spec` you need the following:
 
   * ocaml tool cppo: `opam install cppo`
@@ -147,16 +147,16 @@ To build `fs_test` you need:
 
 If you have opam, you can install ocamlfind, sha, cppo, cmdliner,
 fd-send-recv, camlp4, sexplib, menhir and all of their transitive
-dependencies with `make dep` in the `fs/` directory.
+dependencies with `make dep` in the `sibylfs_src/` directory.
 
 Having installed these dependencies, you should now be able to build SibylFS:
 
-  * In `fs/` type: `make`
+  * In `sibylfs_src/` type: `make`
 
-When this is complete, you need to add the executables in `fs/fs_test`
+When this is complete, you need to add the executables in `sibylfs_src/fs_test`
 to your path, e.g. by typing:
 
-    export PATH=<absolute path to fs>/fs_test:$PATH
+    export PATH=<absolute path to sibylfs_src>/fs_test:$PATH
 
 <!-- FIXME test these source-compile instructions -->
 
