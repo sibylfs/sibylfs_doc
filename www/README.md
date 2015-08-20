@@ -33,7 +33,7 @@ The test suite is available from Github. See
 
 ## Documentation
 
-This documentation lives in the `doc/www` directory of the code repository. The pages are
+This documentation lives in the <https://github.com/sibylfs/sibylfs_doc/> repository. The pages are
 generated from Markdown, using gitbook
 <https://github.com/GitbookIO/gitbook>
 
