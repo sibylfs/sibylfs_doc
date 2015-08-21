@@ -5,10 +5,10 @@ result, the test scripts are stored in a separate repository.
 
 First, clone the repository: 
 
-    git clone https://github.com/sibylfs/fs_test_suite
+    git clone https://github.com/sibylfs/sibylfs_test_suite
 
 Once you have downloaded/cloned the test scripts, you should have a
-directory `fs_test_suite/test-suite/`, under which are various
+directory `sibylfs_test_suite/test-suite/`, under which are various
 subdirectories such as `check`, `file_descriptors`, and `open`. In the
 following, paths starting `test-suite/` refer to this directory.
 
