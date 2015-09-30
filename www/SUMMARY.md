@@ -1,5 +1,6 @@
 # Summary
 
+* [Getting help][help.md]
 * [System overview](overview.md)
 * [Installation](install.md)
 * [Obtaining test scripts](obtaining_test_scripts.md)
