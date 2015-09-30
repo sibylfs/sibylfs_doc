@@ -1,6 +1,10 @@
 # Installation
 
-The repository for the project is <https://github.com/sibylfs/sibylfs_src>
+The repository for the project is <https://github.com/sibylfs/sibylfs_src>.
+
+Nix is a package manager available on Linux (x86-64) and Mac (Darwin,
+x86-64) (and possibly others e.g. Linux i686).
+
 On Linux, the simplest way to install is probably using prebuilt
 binaries via nix (see below). 
 
@@ -11,10 +15,7 @@ The most reliable method is probably
 "installing from source via nix".
 
 
-## Installing prebuilt binaries via nix
-
-Nix is a package manager available on Linux (x86-64) and Mac (Darwin,
-x86-64) (and possibly others e.g. Linux i686).
+## Installing from source via nix
 
   - Install nix following https://nixos.org/nix/ : type 
   
@@ -25,7 +26,40 @@ x86-64) (and possibly others e.g. Linux i686).
   This requires
   root access; alternatives without root are described at
   <https://nixos.org/wiki/How_to_install_nix_in_home_(on_another_distribution)>
+      
+  - Use git to clone the SibylFS source code:
+  
+  
+    git clone https://github.com/sibylfs/sibylfs_src
     
+  - This will create a directory `sibylfs_src`. In the following, paths starting
+    with `sibylfs_src/` refer to this directory.
+
+  - Change to the `sibylfs_src/` directory: 
+  
+  
+    cd sibylfs_src/
+    
+  - Build SibylFS (this may take a long time) by typing: 
+  
+  
+    nix-build
+    
+  - Install SibylFS by typing:
+  
+  
+    nix-env -i ./result
+    
+
+
+An example install is as follows:
+
+[![asciicast](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf.png)](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf)
+
+
+## Installing prebuilt binaries via nix (Linux, Mac)
+
+  - Install nix as above
     
   - Follow the instructions to make sure your environment is set up: 
   
@@ -48,41 +82,8 @@ x86-64) (and possibly others e.g. Linux i686).
     nix-env -i /nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test  # N.B. replace this with the path from the import!
 
 
-## Installing from source via nix
 
-  - Install nix as above
-  
-  - Use git to clone the SibylFS source code:
-  
-  
-    git clone https://github.com/sibylfs/sibylfs_src
-    
-  - This will create a directory `sibylfs_src`. In the following, paths starting
-    with `sibylfs_src/` refer to this directory.
-
-  - Change to the `sibylfs_src/` directory: 
-  
-  
-    cd sibylfs_src/
-    
-  - Build (this may take a long time) and install SibylFS by typing: 
-  
-  
-    nix-env -f ./default.nix -i sibylfs
-    
-
-If you want to inspect the build result, type `nix-build` . This
-should create a directory `result` which contains the 
-executables. To install the result, type `nix-env
--i ./result`
-
-An example install is as follows (this uses `nix-build` to build, followed by `nix-env -i ./result` to install):
-
-[![asciicast](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf.png)](https://asciinema.org/a/c4nxhmnn1ctsi1w1615wzgrrf)
-
-
-
-## Installing plain binaries
+## Installing plain binaries (Linux)
 
 ***This option is not really supported***, but is probably the
 quickest way to install (if it works). Go to
@@ -175,8 +176,6 @@ accessed indirectly by the top-level `fs_test.sh` script. For example,
 subcommands available (check, clean, exec etc.). Further information
 is provided eg for the check subcommand by typing `fs_test.sh check
 --help`.
-
-
 
 
 
