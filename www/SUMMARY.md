@@ -7,6 +7,7 @@
 * [Checking the traces using SibylFS](checking_traces.md)
 * [Generating HTML output](generating_html.md)
 * [FAQ](faq.md)
+* [Acknowledgements](acks.md)
 
 <!--
 * [READMES NB the following links aren't correct in generated html]()

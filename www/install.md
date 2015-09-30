@@ -6,13 +6,15 @@ Nix is a package manager available on Linux (x86-64) and Mac (Darwin,
 x86-64) (and possibly others e.g. Linux i686).
 
 On Linux, the simplest way to install is probably using prebuilt
-binaries via nix (see below). 
+binaries via nix (see below). However, these are probably out of date
+wrt the github source.
 
 <!-- Potentially quicker, but fragile, is to
 install "plain binaries".  -->
 
-The most reliable method is probably
-"installing from source via nix".
+The most reliable method is probably "installing from source via
+nix". This has the added advantage that it builds the current version
+of the code from github.
 
 
 ## Installing from source via nix
