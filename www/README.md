@@ -4,7 +4,7 @@ These pages are documentation for the SibylFS project.
 
 These pages document how to use SibylFS. The paper "SibylFS: formal
 specification and oracle-based testing for POSIX and real-world file
-systems" <http://www.tom-ridge.com/resources/doc/sosp_draft.pdf> ***should be read first***, particularly sections 1
+systems" <http://sigops.org/sosp/sosp15/current/2015-Monterey/printable/102-ridge.pdf> ***should be read first***, particularly sections 1
 and 2 which give background and an overview of the system, and section
 6 which describes the test suite and harness.
 
@@ -33,7 +33,8 @@ The test suite is available from Github. See
 
 ## Documentation
 
-This documentation lives in the <https://github.com/sibylfs/sibylfs_doc/> repository. The pages are
-generated from Markdown, using gitbook
+This documentation lives in the
+<https://github.com/sibylfs/sibylfs_doc/> repository (subdirectory
+`www`). The pages are generated from Markdown, using gitbook
 <https://github.com/GitbookIO/gitbook>
 

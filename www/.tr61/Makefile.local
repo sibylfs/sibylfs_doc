@@ -1,7 +1,9 @@
+# -*- mode:makefile -*-
 WWWDIR:=/tmp/l/github/sibylfs.github.io
 
 upload:
 	cp -R _book/* $(WWWDIR)
+	rm $(WWWDIR)/Makefile.local
 	cd $(WWWDIR) && git status && git add * && git commit -m "+" -a && git push
 
 #	-cp book.pdf ~/l/nyx_www_home/home_page/fs/

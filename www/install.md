@@ -68,7 +68,7 @@ An example install is as follows:
 
   - Download the prebuilt binaries for your platform. Go to the binary releases page <https://github.com/sibylfs/sibylfs_binaries/releases>, select the newest release, and download the closure file that corresponds to your architecture:
     - Linux 64-bit binaries: `sibylfs_nix_linux_amd64.closure`
-    - Mac OS X 10.9.3 64-bit binaries (may work on other platforms): `FIXME_nix_mac.closure`
+    - Mac OS X 10.10.3 (and maybe others) 64-bit binaries: `sibylfs_nix_mac_amd64.closure`
     
   - Place the binaries in the nix store: 
 
@@ -76,7 +76,7 @@ An example install is as follows:
     nix-store --import <   [path to downloaded binay]
     
    - This will print various entries; the last entry will be a path to sibylfs, something like:
-    `/nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test`; now install the binaries into your path: 
+    `/nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test`. Now install the binaries into your path: 
 
 
     nix-env -i /nix/store/f77518afhrq1jsih7rgr5y2gc9v8zsi3-fs_test  # N.B. replace this with the path from the import!
