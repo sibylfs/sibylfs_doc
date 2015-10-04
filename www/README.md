@@ -10,17 +10,18 @@ and 2 which give background and an overview of the system, and section
 
 ## Code
 
-SibylFS is hosted on Github, see <https://github.com/sibylfs/> . See
-[here](install.html) for how to install from source.
+SibylFS is hosted on GitHub, see <https://github.com/sibylfs/>. Read
+[the installation instructions](install.html) for guidance on how and
+when to install from source.
 
 ## Binaries
 
-Binaries can be downloaded from Github. See
+Binaries can be downloaded from GitHub. See
 [installation](install.html) for further instructions.
 
 ## Test suite
 
-The test suite is available from Github. See
+The test suite is available from GitHub. See
 [here](obtaining_test_scripts.html) for further instructions.
 
 
