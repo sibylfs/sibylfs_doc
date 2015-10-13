@@ -6,4 +6,6 @@ There are several options:
   
   * email address for google group: <code>sibylfs (at) googlegroups dot com</code>
   
-
+  * [GitHub issue
+    tracker](https://github.com/sibylfs/sibylfs_src/issues) for issue
+    reports on the tool
