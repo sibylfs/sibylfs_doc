@@ -8,6 +8,7 @@
 * [Checking the traces using SibylFS](checking_traces.md)
 * [Generating HTML output](generating_html.md)
 * [FAQ](faq.md)
+* [Possible projects using SibylFS](projects.md)
 * [Acknowledgements](acks.md)
 
 <!--
