@@ -2,15 +2,27 @@
 
 The repository for the project is <https://github.com/sibylfs/sibylfs_src>.
 
+Nix is a package manager available on Linux (x86-64) and Mac (Darwin,
+x86-64) (and possibly others e.g. Linux i686; unfortunately it is not
+supported under FreeBSD). SibylFS is also available via nix (see
+[Installing with nix](#nix-install)). Nix is likely to be more stable
+than opam (ie, you are more likely to be able to build using Nix).
+
+N.B. 2016-07-15 nix changed its hashing function recently;
+unfortunately there are two hashing functions now in existence; if you
+get a message similar to:
+
+```
+output path ‘/nix/store/77hcsyrhmr70dp720jdhxqfvzfcqyvlr-lem-5b4a168’ has r:sha256 hash ‘19642yadi089p8si87n0rbn0mwwxyvzjrv33g848gaqy811i0zak’ when ‘0z1chfa2q4h7rdzabyjjh3zhgdafjhjhxyna5hd6q11ns88v7xds’ was expected
+```
+
+then you are probably running into this problem; the fix is on branch
+`2016-07-14_fix_nix` from github.
+
 OPAM is the OCaml Package Manager which manages sets of complete OCaml
 package development environments per user. It's available on Linux, OS
-X, and FreeBSD and is the recommended way to install, use, and develop
-SibylFS. See [Installing with OPAM](#opam-install) and [Developing
+X, and FreeBSD. See [Installing with OPAM](#opam-install) and [Developing
 with OPAM](#opam-develop) for instructions.
-
-Nix is a package manager available on Linux (x86-64) and Mac (Darwin,
-x86-64) (and possibly others e.g. Linux i686). SibylFS is also available
-via nix (see [Installing with nix](#nix-install)).
 
 On Linux, the simplest way to install is using prebuilt binaries via nix
 (see [Installing binaries with nix](#nix-binaries)).

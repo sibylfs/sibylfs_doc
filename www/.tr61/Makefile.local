@@ -1,5 +1,6 @@
 # -*- mode:makefile -*-
 WWWDIR:=/tmp/l/github/sibylfs.github.io
+GITBOOK:=/tmp/l/Dropbox/bin/node_modules/.bin/gitbook
 
 upload:
 	cp -R _book/* $(WWWDIR)

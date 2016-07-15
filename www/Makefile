@@ -7,13 +7,13 @@ SHELL:=bash
 # the markdown is edited)
 all:
 	$(MAKE) clean # clean out old version
-	gitbook build
+	$(GITBOOK) build
 
 clean:
 	rm -rf _book
 	rm -f book.pdf
 
 pdf:
-	gitbook pdf
+	$(GITBOOK) pdf
 
 -include Makefile.local
